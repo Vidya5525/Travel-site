@@ -1,0 +1,497 @@
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --acent-color:#2294ed;
+    --padding-inline-section:20px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform:capitalize;
+    outline:none; 
+    border:none;
+    text-decoration:none;
+    transition:all 0.2s ease-out;
+}
+
+*::selection{
+    background:var(--acent-color);
+    color:#fff;
+}
+
+ body{
+    color:var(--primary-text-color);
+ }
+ h1{
+    font-size:3rem;
+ }
+h2{
+    font-size:2rem;
+}
+h3{
+    font-size:1.5rem;
+}
+p{
+    font-size:1rem;
+    color:var(--secondary-text-color);
+    line-height:1.8rem;
+}
+a{
+    display:inline-block;
+}
+
+
+/* ------------------------------------------------------Game Start----------------------------------------------------- */
+
+
+.small-bold-text{
+    font-size:1rem;
+    font-weight:700;
+}
+.container{
+    max-width:1180;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-section);
+    overflow:hidden;
+
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.hover-links{
+    color:var(--primary-text-color);
+}
+
+.hover-links:hover{
+    color:var(--acent-color);
+    cursor:pointer;
+}
+
+.primary-btn{
+    background-color:var(--acent-color);
+    border-radius:6px;
+    font-weight:700;
+    color:white !important;
+    padding:12px 15px;
+    box-shadow:0 0 2px var(--secondary-text-color);
+    text-align:center;
+    
+}
+
+.primary-btn:hover{
+    background:rgb(4, 78, 107);
+}
+
+.secondary-btn{
+    border:0.5px solid var(--secondary-text-color);
+    border-radius:6px;
+    font-weight:700;
+    color:var(--primary-text-color) !important;
+    padding:12px 15px;
+}
+
+.secondary-btn:hover{
+    border-color:var(--acent-color);
+    color:var(--acent-color) !important;
+}
+
+.top-banner{
+
+    background-color:#4fb3d4;
+}
+
+.banner-text{
+    color:white;
+    padding:15px 30px;
+    text-align:center;
+}
+
+.main-nav{
+    margin-top:20px;
+    justify-content:space-between;
+    position:relative;
+}
+
+.main-nav .company-logo{
+    text-transform:uppercase !important;
+    font-size:2.5rem;
+    font-weight:bolder;
+}
+
+.main-nav .company-logo span{
+    color:red;
+    font-size:2.5rem;
+    font-weight:bolder;
+    text-transform:uppercase !important;
+}
+
+.nav-links{
+    flex-basis:730px;
+}
+
+.nav-links ul{
+    justify-content:end;
+    gap:40px;
+}
+
+ul{
+    list-style:none;
+    
+}
+
+.nav-toggle{
+    
+    display:none;
+}
+
+
+/* -----------------------------------------------------------Header---------------------------------------------------- */
+
+header{
+    padding:50px var(--padding-inline-section);
+}
+.header-section{
+    justify-content:center;
+    gap:50px;
+}
+.hearder-left{
+    max-width:40vw;
+}
+.hearder-left h1{
+    margin-top:20px;
+}
+
+.hearder-right img{
+    width:100%;
+    /* box-shadow:0 1rem 2rem rgba(0,0,0,.2); */
+}
+
+/* .started{
+    margin:20px;
+} */
+
+
+
+/* -------------------------------------------------img & registration box----------------------------------------------------- */
+
+section{
+    margin-top:20px;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.container img{
+    width:800px;
+}
+.container .inputBox{
+    width:550px;
+    padding:1rem;
+    border:0.5px solid var(--secondary-text-color);
+    font-size:1rem;
+    color:var(--primary-text-color);
+    border-radius:30px;
+    
+}
+.container .inputBox h3{
+    font-size:1.5rem;
+    padding:1rem 1rem;
+    color:var(--acent-color);
+}
+
+.container .inputBox .in{
+    width:500px;
+    border-radius:30px;
+    font-size:1rem;
+}
+
+.inputBox input{
+    border:0.5px solid var(--secondary-text-color);
+    border-radius:6px;
+    font-weight:700;
+    color:var(--primary-text-color) !important;
+    padding:12px 55px;
+}
+
+.inputBox .submit{
+    margin-top:20px;
+    text-align:center;
+    width:500px;
+    border-radius:30px;
+    font-size:1rem;
+    color:white !important;
+    cursor:pointer;
+}
+
+
+/* ---------------------------------------------------------Gallery-------------------------------------------------------- */
+
+
+
+.gallery-section{
+    padding:20px var(--padding-inline-section);
+}
+.container .gallery-header{
+    text-align:center;
+}
+.gallery-img{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:2rem;
+}
+.gallery-img{
+    margin:50px 0 5px;
+}
+.gallery-img .box{
+    width:300px;
+    border-radius:.5rem;
+    overflow:hidden;
+    box-shadow:0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.box:hover{
+    box-shadow:0 0 15px #888;
+}
+
+.gallery-img .box img{
+    height:10rem;
+    width:100%;
+    object-fit:fill;
+}
+
+.gallery-img .box .content{
+    padding:20px;
+}
+.gallery-img .box .content i{
+    padding:0 5px;
+    color:var(--acent-color);
+}
+.box .stars{
+    color:gold;
+    padding:5px 10px;
+}
+
+
+
+
+/* -----------------------------------Feature--------------------------------------------------------- */
+
+
+.features-section{
+    padding:80px var(--padding-inline-section) 0;
+}
+.feature-header{
+    text-align:center;
+}
+.feature-heading-text{
+    margin-bottom:20px;
+}
+
+
+.feature1{
+    padding:50px var(--padding-inline-section) 0;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    flex:wrap;
+    gap:20px;
+
+
+}
+.feature1 .box2 i{
+    padding:1rem;
+    font-size:3rem;
+    color:var(--acent-color);
+}
+.feature1 .box2 p{
+    line-height:25px;
+    padding:16px 0;
+
+} 
+
+
+
+/* -----------------------------------Big Feature--------------------------------------------------------- */
+
+
+
+
+.big-feature{
+    padding:30px var(--padding-inline-section) 0;
+}
+
+.feature-container1{
+    gap:30px;
+    /* flex-wrap:wrap; */
+}
+.feature-container1 .feature-img{
+    width:100%;
+}
+.feature-container1 .desc{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+#second-feature{
+    flex-direction:row-reverse;
+}
+
+
+/* -----------------------------------Example--------------------------------------------------------- */
+
+
+.example-header{
+    text-align:center;
+}
+.example-heading-text{
+    margin-top:20px;
+}
+
+.example-area{
+    justify-content:space-evenly;
+    margin-block:30px;
+    flex-wrap:wrap;
+}
+.example-card{
+    width:23%;
+    position:relative;
+    height:300px;
+    background:black;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url(mumbai.jpg);
+    background-size:cover;
+    transition:0.2s ease-out;
+}
+
+.example-card:hover{
+    box-shadow:0 0 15px #888;
+}
+.example-card h3{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    color:white;
+}
+
+.example-card:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url(hydrabad.jpg);
+    background-size:cover;
+}
+.example-card:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url(manipur.jpg);
+    background-size:cover;
+}
+.example-card:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url(varanasi.jpg);
+    background-size:cover;
+}
+
+
+
+
+/* -----------------------------------CTA--------------------------------------------------------- */
+
+
+
+.cta-section{
+    height:200px;
+    background-color:#183b54;
+}
+
+.cta-section1{
+    flex-direction:column;
+    gap:20px;
+    color:white;
+    /* border:2px solid red; */
+    
+}
+
+.cta-section1{
+    height:200px;
+    padding:20px;
+}
+
+.cta-section1 p{
+    color:white;
+}
+
+
+/* -----------------------------------Footer--------------------------------------------------------- */
+
+
+
+
+
+
+
+.footer{
+    padding-block:80px;
+    background-color:#ebf2fa;
+}
+
+.footer-container{
+    align-items:flex-start;
+    justify-content:space-between;
+}
+.link-column{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:15px;
+}
+
+.link-column h4{
+    font-size:1.5rem;
+}
+
+
+/* -----------------------------------Sub-Feature--------------------------------------------------------- */
+
+
+
+.subfooter1{
+    background-color:#b9cde4;
+    padding:30px;
+
+}
+
+.subfooter1 .subfooter{
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+
+.hidden{
+    display:none;
+}
+
+/* -----------------------------------End--------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
